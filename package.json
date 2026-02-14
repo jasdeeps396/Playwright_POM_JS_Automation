@@ -1,0 +1,22 @@
+{
+  "name": "playwrightpom_automationpractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression":"npx playwright test",
+    "webtest":"npx playwright test --grep @webtest --project firefox",
+    "login":"npx playwright test --grep @login --project webkit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.2.1"
+  },
+  "dependencies": {
+    "allure-playwright": "^3.4.5"
+  }
+}
