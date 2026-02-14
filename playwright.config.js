@@ -21,7 +21,7 @@ export default defineConfig({
     timeout: 6000
   },
   reporter: [
-    ['html'],
+      ['html', { outputFolder: 'playwright-report', open: 'never' }],
     ['allure-playwright'],
      ['list'],
   ],
