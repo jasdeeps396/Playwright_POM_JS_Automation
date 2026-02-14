@@ -1,0 +1,2 @@
+# Playwright_POM_JS_Automation
+Automation of rahulshettyaceddmy using playwright javascript
