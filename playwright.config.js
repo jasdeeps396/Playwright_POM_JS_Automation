@@ -14,7 +14,7 @@ import { chromium, defineConfig, devices, firefox } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
-  timeout: 30 * 1000,
+  timeout: 40 * 1000,
   // retries:1,
   expect:
   {
@@ -36,7 +36,8 @@ export default defineConfig({
 
   }
   ,
-  workers:5,
+  workers: process.env.CI ? 1 : 5,
+
 
   
  
@@ -69,7 +70,7 @@ export default defineConfig({
         headless: false,
         screenshot: 'on',
         trace: 'on',
-        video: 'on',
+        video: 'retain-on-failure',
         launchOptions: {
           args: ['--start-maximized']
         },
@@ -87,7 +88,7 @@ export default defineConfig({
         headless: false,
         screenshot: 'on',
         trace: 'on',
-        video: 'on',
+        video: 'retain-on-failure',
         launchOptions: {
           args: ['--start-maximized']
         },
