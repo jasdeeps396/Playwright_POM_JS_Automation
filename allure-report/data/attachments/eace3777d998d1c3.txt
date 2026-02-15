@@ -1,3 +1,0 @@
-Order ID: 698f57851fe6115f6a835cab
-✅ Order Summary page is visible.
-✅ Order IDs match successfully.
